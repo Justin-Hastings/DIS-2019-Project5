@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf8">
+		<title>Insert Quiz</title>
+		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/style.css">
+		
+	</head>
+	
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 me-offset-4 form-div">
+				<form action="" method="post">
+
+					<h3 class="text-centre">Insert Quiz</h3>
+
+					<div id="alert-danger"></div>
+					<div id="alert-success"></div>
+					
+					<div class="form-group">
+						<label for="quizName" >Quiz Name</label>
+						<input type="text" name="quizName" onblur="validateQuizInput()" class="form-control form-control-lg">
+					</div>
+
+					<div class="form-group">
+						<button type="button"  onclick="insertQuiz()" name="insertQuiz-btn" class="btn btn-primary btn-block btn-lg">Insert Quiz</button>
+					</div>
+
+					<p class="text-centre">Quiz already inserted? <a href="login.php">Edit quiz here</a></p>
+				</form>
+				</div>
+			</div>
+		</div>
+		<script src="js/functions.js"></script>
+	</body>
+	
+</html>

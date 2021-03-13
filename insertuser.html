@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Student Sign up</title>
+		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 offset-me-4 form-div">
+				<form action="" method="post">
+
+					<h3 class="text-centre">Register</h3>
+
+					<div id="alert-danger"></div>
+					<div id="alert-success"></div>
+					
+					<div class="form-group">
+						<label for="username" >Username</label>
+						<input type="text" name="username" onblur="validateInput()" class="form-control form-control-lg">
+					</div>
+
+					<div class="form-group">
+						<label for="email" >Email</label>
+						<input type="text" name="email" onblur="validateInput()" class="form-control form-control-lg">
+					</div>
+
+					<div class="form-group">
+						<label for="password" >Password</label>
+						<input type="password" name="password" onblur="validateInput()" class="form-control form-control-lg">
+					</div>
+
+					<div class="form-group">
+						<label for="passwordConf" >Confirm password</label>
+						<input type="password" name="passwordConf" onblur="validateInput()" class="form-control form-control-lg">
+					</div>
+
+					<div class="form-group">
+					<button type="button"  onclick="insertuser()" name="signup-btn" class="btn btn-primary btn-block btn-lg">Sign up</button>
+					</div>
+
+					<p class="text-centre">Already a member? <a href="studentLogin.html">Sign In</a></p>
+				</form>
+				</div>
+			</div>
+		</div>
+		<script src="js/functions.js"></script>
+	</body>
+</html>
